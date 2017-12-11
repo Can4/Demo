@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Materialize CSS</title>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+      <!-- ONE NAVBAR FOR MULTIPLE SITES -->
+      <!-- HOW ITS DONE : https://stackoverflow.com/questions/31954089/html-css-navigation-bar-on-multiple-pages -->
+          <script>
+              $.get("nav.html", function(data){
+              $("#nav-placeholder").replaceWith(data);
+              });
+          </script>
+          <script>
+              $(".button-collapse").sideNav();
+          </script>
+      <script>
+          $(".button-collapse").sideNav();
+      </script>
+
+
+
+
+    <!-- EMMIT for faster coding -->
+
+    <div id="nav-placeholder"></div>
+
+
+
+    <div class="container" style="padding-top:100px">
+
+        <h4><a target="_blank" href="https://www.youtube.com/watch?v=nqT8c5OFjEQ&t=33m42s">Youtube</a></h4>
+        <h4><a target="_blank" href="materialize2.html">part 2</a></h4>
+        <h4><a target="_blank" href="materialize3.html">Example site</a></h4>
+
+        <h2>COLORS</h2>
+        <h5>A color palette is available. Darkening and lightening is possible</h5>
+
+        <div class="red">Div with color class &emsp;&emsp; <mark>&ltdiv class="red"></mark> </div>
+        <div class="red white-text">Div with color class &emsp;&emsp; <mark>&ltdiv class="red white-text"></mark></div>
+        <div class="blue">Div with color class &emsp;&emsp; <mark>&ltdiv class="blue"></mark></div>
+        <div class="deep-purple lighten-3 red-text">Div with color class &emsp;&emsp;
+            <mark>&ltdiv class="deep-purple lighten-3 red-text"></mark></div>
+        <div class="orange darken-2">Div with color class &emsp;&emsp; <mark>&ltdiv class="orange darken-2"></mark></div>
+
+        <h2>BUTTONS</h2>
+        <button class="btn">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn"></mark>
+        <button class="btn waves-effect">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn waves-effect"></mark> <br><br>
+        <button class="btn waves-effect waves-light">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn waves-effect waves-light"></mark>
+        <button class="btn btn-large">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn btn-large"></mark> <br><br>
+        <button class="btn disabled">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn disabled"></mark> <br><br>
+        <button class="btn red">Read More</button> &emsp;&emsp; <mark>&ltbutton class="red"></mark>
+        Just writing a color in the class changes the color of the button , not like in
+        BOOTSTRAP <code >"btn-danger"</code> , <code>"btn-primary"</code> <br><br>
+        <button class="btn red darken-3 black-text">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn red darken-3 black-text"></mark>
+        <button class="btn btn-large blue">Read More</button> &emsp;&emsp; <mark>&ltbutton class="btn btn-large blue"></mark> <br><br>
+        <button class="btn btn-large green"><i class="material-icons left">clouds</i>Read More</button> &emsp;&emsp;
+            <mark>&ltbutton class="btn btn-large green"> &lti  class="material-icons left"> clouds &lt/i></mark> <br><br>
+
+    <!-- FLOATING BUTTON -->
+
+        <a href="#" class="btn-floating red btn-large"> <i class="large material-icons">add</i></a> &emsp;
+            <mark> &lta href="#" class="btn-floating red btn-large"> &lti class="large material-icons"> add &lt/i>&lt/a></mark> <br><br>
+
+    <!-- FIXED ACTION BUTTON -->
+
+        <div class="fixed-action-btn">
+            <a href="#" class="btn-floating red btn-large"> <i class="large material-icons">mode_edit</i></a>
+            <ul>
+                <li><a href="#" class="btn-floating tellow btn-large"> <i class="large material-icons">insert_chart</i></a></li>
+                <li><a href="#" class="btn-floating blue btn-large"> <i class="large material-icons">format_quote</i></a></li>
+                <li><a href="#" class="btn-floating green btn-large"> <i class="large material-icons">publish</i></a></li>
+                <li><a href="#" class="btn-floating orange btn-large"> <i class="large material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+
+    <!-- FLAT BUTTON -->
+            <a href="#" class="waves-effect waves-teal btn-flat">Button</a> <mark>&lta href="#" class="waves-effect waves-teal btn-flat">Button&lt/a></mark> <br><br>
+
+        <h2>HELPERS</h2>
+
+    <!-- ALIGNMENT -->
+    <div>
+        <h5 class="left-align">Left aligned <mark>&lth5 class="left-align"></mark>
+        <h5 class="right-align">Right aligned <mark>&lth5 class="left-align"></mark></h5>
+        <h5 class="center-align">Center aligned <mark>&lth5 class="left-align"></mark></h5>
+
+    </div>
+
+    <!-- QUICK FLOATS -->
+        <div class="left">Left Float <mark>&ltdiv class="left">Left Float&lt/div></mark> </div>
+        <div class="right">Right Float <mark>&ltdiv class="left">Left Float&lt/div></mark></div>
+    <!-- CLEAR FIX -->
+        <div class="clearfix"></div> <mark>&ltdiv class="clearfix">&lt/div></mark>
+
+
+
+    <!-- HIDE CONTENT -->
+        <div class="hide">Hidden for all devices</div>
+        <div class="hide-on-small-only">Hidden for mobile devices</div>
+        <div class="hide-on-med-only">Hidden for tablets only</div>
+        <div class="hide-on-med-and-down">Hidden for tablets and smaller</div>
+        <div class="hide-on-med-and-up">Hidden for tablets and higher</div>
+        <div class="hide-on-large-only">Hidden for desktops</div>
+
+        <h6>&ltdiv class="hide"><b> Hidden for all devices</b> &lt/div> <br>
+        &ltdiv class="hide-on-small-only"><b> Hidden for mobile devices</b> &lt/div><br>
+        &ltdiv class="hide-on-med-only"><b> Hidden for tablets only</b> &lt/div><br>
+        &ltdiv class="hide-on-med-and-down"><b> Hidden for tablets and smaller</b> &lt/div><br>
+        &ltdiv class="hide-on-med-and-up"><b> Hidden for tablets and higher</b> &lt/div><br>
+        &ltdiv class="hide-on-large-only"><b> Hidden for desktops</b> &lt/div><br> </h6>
+
+    <!-- TRUNCATE -->
+        <h5 class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequatur modi soluta, voluptas nulla explicabo architecto id
+            animi voluptates perspiciatis, quod culpa quae harum ea maiores,
+            ullam dolorem commodi assumenda itaque!</h5> <mark> class="truncate" </mark>
+        <br><br>
+
+    <!-- EFFECTS -->
+
+    <!-- HOVERABLE -->
+        <div class="red white-text hoverable">Hoverable &emsp; <mark> class="red white-text hoverable" </mark></div>
+    <!-- SHADOWS -->
+        <p class="z-depth-1">z-depth-1</p>
+        <p class="z-depth-2 green">z-depth-2</p>
+        <p class="z-depth-3 orange">z-depth-3</p>
+        <p class="z-depth-4">z-depth-4</p>
+        <p class="z-depth-5">z-depth-5</p>
+
+    <!-- FLOW TEXT -->
+        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Eaque distinctio iusto sint quia temporibus nemo consequuntur et amet,
+            molestiae omnis. Quia illum non, accusamus, earum laborum nam excepturi cupiditate recusandae.
+        <mark> class="flow-text" </mark></p>
+
+    <!-- IMAGES -->
+        <img src="http://www.chewonthatblog.com/wp-content/uploads/2012/01/spicesindian.jpg"
+        alt="" class="responsive-img"> <mark> &ltimg src="URL" class="responsive-img" </mark>
+
+        <img src="http://www.chewonthatblog.com/wp-content/uploads/2012/01/spicesindian.jpg"
+        alt="" class="responsive-img circle"> <mark> &ltimg src="URL" class="responsive-img circle" </mark> <br> <br>
+
+    </div> <!-- END OF CONTAINER -->
+
+    <!-- NAVIGATION -->
+    <nav>
+    <div class="nav-wrapper green">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+</nav> <br> <br>
+
+  <nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo right">Logo</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="#">Sass</a></li>
+      <li><a href="#">Components</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+</nav> <br> <br>
+
+<!-- DROPDOWN -->
+
+<ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+
+<nav>
+<div class="nav-wrapper orange">
+  <a href="#" class="brand-logo right">Logo</a>
+  <ul id="nav-mobile" class="left hide-on-med-and-down">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="" class="dropdown-button" data-activates="dropdown1">Dropdown<i class="material-icons right">
+    arrow_drop_down</i></a></li>
+  </ul>
+</div>
+</nav><br><br>
+
+<!-- ICONS & BUTTONS IN NAV -->
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#" class="brand-logo right">Logo</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#"><i class="material-icons">search</i></a></li>
+            <li><a href="#"><i class="material-icons left">refresh</i>Link with Left Icon</a></li>
+            <li><a class="waves-effect waves-light btn">Button</a></li>
+          </ul>
+        </div>
+      </nav>
+
+ <br><br>
+
+ <!-- SEARCHBAR -->
+       <nav>
+       <div class="nav-wrapper">
+         <form>
+           <div class="input-field">
+             <input id="search" type="search" required>
+             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+             <i class="material-icons">close</i>
+           </div>
+         </form>
+       </div>
+     </nav>
+
+     <br><br>
+
+     <!-- MOBILE COLLAPSE -->
+         <nav>
+           <div class="nav-wrapper">
+             <a href="#!" class="brand-logo">Mobile Collapse</a>
+             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+             <ul class="right hide-on-med-and-down">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+             </ul>
+             <ul class="side-nav" id="mobile-demo">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+             </ul>
+           </div>
+         </nav>
+
+
+
+
+
+
+
+        <div class="container" style="height:200px"></div>
+    </div>
+
+
+
+    </body>
+  </html>
